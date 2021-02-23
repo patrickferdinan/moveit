@@ -52,6 +52,9 @@ a {
   max-width: 892px;
   margin: 0 auto;
   padding: 2.5rem 2rem;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .experience-bar {
@@ -70,4 +73,16 @@ a {
   background: var(--gray-line);
   margin: 0 1.5rem;
   position: relative;
+}
+
+.experience-bar > div > div{
+  height: 4px;
+  border-radius: 4px;
+  background: var(--green);
+}
+
+span.current-experience {
+  position: absolute;
+  top: 12px;
+  transform: translateX(-50%);
 }
