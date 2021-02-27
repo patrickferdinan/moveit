@@ -54,7 +54,8 @@ export function Countdown() {
         disabled
         className={styles.countdownButton}
         >
-        Ciclo encerrado
+        Ciclo encerrado&nbsp;&nbsp; 
+        <img src="icons/check-circle.svg" alt="Level"/>
       </button>
       ) : (
         <>
@@ -64,7 +65,7 @@ export function Countdown() {
               className={ `${styles.countdownButton} ${styles.countdownButtonActive}` }
               onClick={resetCountdown}
               >
-              Abandonar ciclo
+              Abandonar ciclo 
             </button>
           ): (
             <button 
